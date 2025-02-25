@@ -18,6 +18,9 @@ export default function Profile(props) {
         <a href={props.instagramUrl} target="_blank">
           Instagram
         </a>
+        <a href={props.portifolioUrl} target="_blank">
+          Portifolio
+        </a>
       </div>
     </div>
   );

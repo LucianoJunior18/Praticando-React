@@ -13,6 +13,7 @@ export default function App() {
         githubUrl="https://github.com/LucianoJunior18"
         likedinUrl="https://www.linkedin.com/in/luciano-oliveira-93389a228/"
         instagramUrl="https://www.instagram.com/jr_oliveiiraa/"
+        portifolioUrl="https://lucianojunior18.github.io/MeuPortifolio/"
       />
     </div>
   );
