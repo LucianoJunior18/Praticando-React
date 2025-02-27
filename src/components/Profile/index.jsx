@@ -13,21 +13,11 @@ export default function Profile(props) {
       <ProfileSection>{props.bio}</ProfileSection>
       <ProfileSection>{props.phone}</ProfileSection>
       <ProfileSection>{props.email}</ProfileSection>
-      <ProfileSection >
-        <div className={style}>
-          <LinkButton href={props.githubUrl}>
-            GitHub
-          </LinkButton>
-          <LinkButton href={props.likedinUrl}>
-            LinkedIn
-          </LinkButton>
-          <LinkButton href={props.instagramUrl}>
-            Instagram
-          </LinkButton>
-          <LinkButton href={props.portifolioUrl}>
-            Portifolio
-          </LinkButton>
-        </div>
+      <ProfileSection className={style.links}>
+        <LinkButton href={props.githubUrl}>GitHub</LinkButton>
+        <LinkButton href={props.likedinUrl}>LinkedIn</LinkButton>
+        <LinkButton href={props.instagramUrl}>Instagram</LinkButton>
+        <LinkButton href={props.portifolioUrl}>Portifolio</LinkButton>
 
       </ProfileSection>
     </div>

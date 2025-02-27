@@ -16,3 +16,9 @@
   width: 180px;
   height: 200px;
 }
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
