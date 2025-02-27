@@ -16,38 +16,3 @@
   width: 180px;
   height: 200px;
 }
-
-.container > div {
-  border-top: solid 2px rgb(255, 238, 3);
-  padding: 1rem 2.5rem;
-}
-
-.name {
-  margin: 1rem;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-}
-
-.links > a {
-  background-color: rgb(255, 217, 3);
-  border-radius: 0.75rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  color: #000000;
-  font-weight: 700;
-  padding: 0.625rem;
-  position: relative;
-  bottom: 0;
-  text-decoration: none;
-  transition: 0.2s;
-  width: 10rem;
-}
-
-.links > a:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-  bottom: 0.25rem;
-}

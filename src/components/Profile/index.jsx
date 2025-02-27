@@ -1,27 +1,35 @@
 /* eslint-disable react/prop-types */
+import LinkButton from "../LinkButton";
+import ProfileSection from "./ProfileSection";
 import style from "./styles.module.css";
+import Title from "./Title";
 export default function Profile(props) {
   return (
     <div className={style.container}>
       <img className={style.avatar} src={props.avatar} alt={props.name} />
-      <h2 className={style.name}>{props.name}</h2>
-      <div>{props.bio}</div>
-      <div>{props.phone}</div>
-      <div>{props.email}</div>
-      <div className={style.links}>
-        <a href={props.githubUrl} target="_blank">
-          GitHub
-        </a>
-        <a href={props.likedinUrl} target="_blank">
-          LinkedIn
-        </a>
-        <a href={props.instagramUrl} target="_blank">
-          Instagram
-        </a>
-        <a href={props.portifolioUrl} target="_blank">
-          Portifolio
-        </a>
-      </div>
+      <Title>
+        <span>{props.name}</span>
+      </Title>
+      <ProfileSection>{props.bio}</ProfileSection>
+      <ProfileSection>{props.phone}</ProfileSection>
+      <ProfileSection>{props.email}</ProfileSection>
+      <ProfileSection >
+        <div className={style}>
+          <LinkButton href={props.githubUrl}>
+            GitHub
+          </LinkButton>
+          <LinkButton href={props.likedinUrl}>
+            LinkedIn
+          </LinkButton>
+          <LinkButton href={props.instagramUrl}>
+            Instagram
+          </LinkButton>
+          <LinkButton href={props.portifolioUrl}>
+            Portifolio
+          </LinkButton>
+        </div>
+
+      </ProfileSection>
     </div>
   );
 }
