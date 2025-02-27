@@ -22,3 +22,24 @@
   align-items: center;
   flex-direction: column;
 }
+
+.buttonFollow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd903;
+  border-radius: 4px;
+  bottom: 0;
+  cursor: pointer;
+  margin: 0.5rem auto;
+  padding: 0.4rem;
+  position: relative;
+  transition: 0.2s;
+}
+
+.buttonFollow:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  background-color: black;
+  bottom: 0.25rem;
+  color: #ffd903;
+}
